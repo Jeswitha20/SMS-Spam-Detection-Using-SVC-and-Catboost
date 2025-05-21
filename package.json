@@ -1,0 +1,11 @@
+{
+  "name": "sms-spam-detection",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "scripts": {
+    "dev": "concurrently \"uvicorn backend.main:app --host localhost --port 8000 --reload\" \"npm run dev --prefix frontend\""
+  }
+}
